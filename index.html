@@ -8,109 +8,82 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-:root{
-  --bg:#0f172a;
-  --card:#1e293b;
-  --text:#e2e8f0;
-  --muted:#94a3b8;
-  --accent:#38bdf8;
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #0f172a;
+  color: #e2e8f0;
 }
 
-.light{
-  --bg:#f8fafc;
-  --card:#ffffff;
-  --text:#0f172a;
-  --muted:#475569;
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
 }
 
-body{
-  font-family:'Poppins',sans-serif;
-  margin:0;
-  background:var(--bg);
-  color:var(--text);
-  transition:0.3s;
+h1, h2 {
+  margin-bottom: 10px;
 }
 
-.container{
-  max-width:1000px;
-  margin:auto;
-  padding:40px 20px;
+h1 {
+  font-size: 40px;
+  color: #38bdf8;
 }
 
-.nav{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:15px 20px;
-  background:var(--card);
-  position:sticky;
-  top:0;
+h2 {
+  color: #7dd3fc;
+  margin-top: 40px;
 }
 
-.nav a{
-  margin-left:20px;
-  text-decoration:none;
-  color:var(--muted);
+p {
+  color: #cbd5f5;
+  line-height: 1.6;
 }
 
-.nav a:hover{color:var(--accent);}
-
-.toggle{
-  cursor:pointer;
-  padding:6px 12px;
-  border-radius:20px;
-  background:var(--accent);
-  color:#000;
-  font-size:12px;
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background: #020617;
+  position: sticky;
+  top: 0;
 }
 
-h1{color:var(--accent);}
-
-.card{
-  background:var(--card);
-  padding:20px;
-  border-radius:12px;
-  margin-top:15px;
+.nav a {
+  color: #94a3b8;
+  margin-left: 20px;
+  text-decoration: none;
 }
 
-.skills span{
-  display:inline-block;
-  background:rgba(56,189,248,0.2);
-  padding:6px 12px;
-  margin:5px;
-  border-radius:20px;
-  font-size:13px;
+.nav a:hover {
+  color: #38bdf8;
 }
 
-.project a{
-  display:inline-block;
-  margin-right:10px;
-  margin-top:10px;
-  padding:6px 12px;
-  border-radius:6px;
-  background:var(--accent);
-  color:#000;
-  text-decoration:none;
-  font-size:12px;
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 15px;
 }
 
-.project a:hover{opacity:0.8;}
-
-.btn{
-  display:inline-block;
-  margin-top:15px;
-  padding:10px 18px;
-  border-radius:6px;
-  background:var(--accent);
-  color:#000;
-  text-decoration:none;
-  font-weight:500;
+.skills span {
+  display: inline-block;
+  background: #334155;
+  padding: 6px 12px;
+  margin: 5px;
+  border-radius: 20px;
+  font-size: 13px;
 }
 
-.footer{
-  text-align:center;
-  padding:20px;
-  color:var(--muted);
+.project {
+  margin-top: 20px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  color: #94a3b8;
 }
 </style>
 </head>
@@ -118,65 +91,91 @@ h1{color:var(--accent);}
 <body>
 
 <div class="nav">
-  <strong>Mythri</strong>
+  <div><strong>Mythri</strong></div>
   <div>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
-    <span class="toggle" onclick="toggleTheme()">🌙</span>
   </div>
 </div>
 
 <div class="container">
 
+<!-- HERO -->
 <h1>Mythri M Yadav</h1>
 <p>Full Stack Developer & Data Analyst</p>
 
 <p>
-BCA graduate skilled in Python, Django, MySQL, Pandas, Tableau, and Excel.
-Focused on building web apps and analyzing real-world data.
+BCA graduate with hands-on experience in building web applications and analyzing data.
+Skilled in Python, Django, MySQL, Pandas, Tableau, and Excel.
+Actively seeking Software Developer or Data Analyst roles.
 </p>
 
-<a href="MYTHRI_M_YADAV_Resume" download class="btn">⬇ Download Resume</a>
-
-<h2 id="about">About</h2>
+<!-- ABOUT -->
+<h2 id="about">About Me</h2>
 <div class="card">
 <p>
-I build scalable web applications and extract insights from data.
-Strong in backend logic, database design, and data visualization.
+I specialize in developing database-driven web applications and extracting insights from data.
+I enjoy solving real-world problems using both development and analytics skills.
 </p>
 </div>
 
+<!-- SKILLS -->
 <h2 id="skills">Skills</h2>
 <div class="card skills">
 <span>Python</span>
 <span>Django</span>
 <span>MySQL</span>
+<span>HTML</span>
+<span>CSS</span>
 <span>Pandas</span>
 <span>Matplotlib</span>
 <span>Tableau</span>
 <span>Excel</span>
-<span>HTML</span>
-<span>CSS</span>
 <span>Git</span>
 </div>
 
+<!-- EXPERIENCE -->
+<h2>Experience</h2>
+<div class="card">
+<h3>Full Stack Intern – Knowx Innovations</h3>
+<p>Feb 2024 – Mar 2024</p>
+<ul>
+<li>Built full stack web applications using Python & Django</li>
+<li>Developed ticket booking system with authentication & CRUD</li>
+<li>Designed MySQL database schema</li>
+<li>Applied MVC architecture</li>
+</ul>
+</div>
+
+<!-- PROJECTS -->
 <h2 id="projects">Projects</h2>
 
 <div class="card project">
 <h3>Ticket Booking System</h3>
-<p>Full stack app with authentication and CRUD operations.</p>
-<a href="https://github.com/mythri-web" target="_blank">GitHub</a>
-<a href="#" target="_blank">Live Demo</a>
+<p>
+Full stack web app for booking and managing tickets with authentication and role-based access.
+</p>
 </div>
 
 <div class="card project">
 <h3>Retail Sales Analysis</h3>
-<p>Analyzed sales data using Pandas and visualized insights.</p>
-<a href="https://github.com/mythri-web" target="_blank">GitHub</a>
+<p>
+Performed data analysis using Pandas and Matplotlib.
+Identified top-performing products and visualized sales trends.
+</p>
 </div>
 
+<!-- EDUCATION -->
+<h2>Education</h2>
+<div class="card">
+<p><strong>BCA</strong> – BMS College (2025) | CGPA: 6.47</p>
+<p><strong>PUC</strong> – 52.33%</p>
+<p><strong>SSLC</strong> – 74.08%</p>
+</div>
+
+<!-- CONTACT -->
 <h2 id="contact">Contact</h2>
 <div class="card">
 <p>Email: mythrimyadav@gmail.com</p>
@@ -190,12 +189,6 @@ Strong in backend logic, database design, and data visualization.
 <div class="footer">
 Built by Mythri M Yadav
 </div>
-
-<script>
-function toggleTheme(){
-  document.body.classList.toggle("light");
-}
-</script>
 
 </body>
 </html>
